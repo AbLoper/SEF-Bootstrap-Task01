@@ -1,0 +1,42 @@
+* {
+    border: 0.5px solid black;
+}
+
+section {
+    border: 0.5px solid green;
+}
+
+/* Block Elements */
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    border: 0.5px solid red;
+}
+
+/* Block Elements */
+ul,
+ol,
+li,
+dl,
+dd {
+    border: 0.5px solid yellow;
+}
+
+/* Inline Elements */
+span,
+a,
+button,
+label,
+input,
+textarea,
+select,
+iframe,
+img {
+    border: 1px solid blue;
+}

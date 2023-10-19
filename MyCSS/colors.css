@@ -1,0 +1,26 @@
+.navbarColor {
+    background: #FFFF00;
+    background: -webkit-linear-gradient(to left, #FFFF00 0%, #05C1FF 50%, #FFFF00 100%);
+    background: -moz-linear-gradient(to left, #FFFF00 0%, #05C1FF 50%, #FFFF00 100%);
+    background: linear-gradient(to left, #FFFF00 0%, #05C1FF 50%, #FFFF00 100%);
+}
+
+.grdnt {
+    font-size: x-large;
+    font-weight: bolder;
+    background: #151BCF;
+    background: -webkit-linear-gradient(to top right, #151BCF 0%, #FF0000 100%);
+    background: -moz-linear-gradient(to top right, #151BCF 0%, #FF0000 100%);
+    background: linear-gradient(to top right, #151BCF 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    background: #151BCF;
+    background: -webkit-linear-gradient(to top right, #151BCF 0%, #FF0000 100%);
+    background: -moz-linear-gradient(to top right, #151BCF 0%, #FF0000 100%);
+    background: linear-gradient(to top right, #151BCF 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

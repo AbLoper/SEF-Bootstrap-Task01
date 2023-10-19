@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons_Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Css Stylesheet Source File -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Font-Awesome Source File-->
+    <link rel="stylesheet" href="/css/all.css" />
+    <!-- My Css Style Source Files -->
+    <!-- <link rel="stylesheet" href="/MyCSS/sections.css" /> -->
+    <!-- <link rel="stylesheet" href="/MyCSS/borders.css" /> -->
+    <link rel="stylesheet" href="/MyCSS/effects.css" />
+    <!-- <link rel="stylesheet" href="/MyCSS/errorsfix.css" /> -->
+    <!-- <link rel="stylesheet" href="/MyCSS/classes.css" /> -->
+    <link rel="stylesheet" href="/MyCSS/colors.css" />
+</head>
+<body>
+
+
+
+    <!-- -------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-3 navbarColor">
+        <div class="container-fluid">
+            <img src="/statics/icons/GitHubLogo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill mx-3">
+            <a class="navbar-brand" href="javascript:void(0)">Egypt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-info" href="#">Cairo</a></li>
+                            <li><a class="dropdown-item text-info" href="#">Alex</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                                </hr>
+                            </li>
+                            <li><a class="dropdown-item text-info" href="#">Luxor</a></li>
+                            <li><a class="dropdown-item text-info" href="#">Aswan</a></li>
+                            <li><a class="dropdown-item text-info" href="#">Sharam El Shikh</a></li>
+                            <li><a class="dropdown-item text-info" href="#">El Glala</a></li>
+                            <li><a class="dropdown-item text-info" href="#">More...</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd">
+                        </div>
+                        <div class="form-check form-switch ms-3">
+                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                                checked>
+                            <label class="form-check-label" for="mySwitch">Dark Mode</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide position-relative" data-bs-ride="carousel">
+
+
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/statics/images/crsl1.jpg" alt="Los Angeles" class="crsl d-block">
+
+                    <div class="overlaydiv z-1"></div>
+
+                    <div class="carousel-caption mb-3 z-2">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                        <button class="btn btn-primary">Visit Us</button>
+                    </div>
+                </div>
+
+            <div class="carousel-item">
+                <img src="/statics/images/crsl2.jpg" alt="Chicago" class="crsl d-block">
+
+                <div class="overlaydiv z-1"></div>
+
+                <div class="carousel-caption mb-3 z-2">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                    <button class="btn btn-primary">Visit Us</button>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="/statics/images/crsl3.jpg" alt="New York" class="crsl d-block">
+
+                <div class="overlaydiv z-1"></div>
+
+                <div class="carousel-caption mb-3 z-2">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                    <button class="btn btn-primary">Visit Us</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <ul class="iconsdiv">
+        <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+    </ul>
+
+    <!-- -------------------------------------------- -->
+
+    <div class="ftr bg-warning h-25 p-4 border-5 navbarColor">
+        <h3 class="grdnt">Welcome</h3>
+        <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo dolore in rerum illo
+            minus facilis
+            quaerat numquam impedit sapiente error quas sunt magni qui enim, ipsum optio, ex est consectetur.</p>
+        <button class="btn btn-light text-primary">Learn more</button>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <hr>
+
+    <div class="my-4 p-5 bg-success text-white text-center">
+        <h1>Popular Destination In Egypt</h1>
+    </div>
+
+
+    <!-- -------------------------------------------- -->
+
+    <div class="container-fluid">
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        Collapsible Group Item #1
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        Collapsible Group Item #2
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                        Collapsible Group Item #3
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <hr class="my-3">
+
+    <div class="bg-primary text-white text-center p-4 rounded-bottom">
+        <h3>Translate From Arabic To English</h3>
+    </div>
+
+    <div class="container-fluid mb-4 bg-info p-4 rounded-bottom">
+        <span class="h2 grdnt">Write and Translate</span>
+        <span class="h4"><a class="text-light" href="" style="text-decoration: none;">Press Here</a></span>
+        <form>
+            <div class="mb-3 mt-3">
+
+
+                <!-- <div class="copied" style="display: none;">copied</div> -->
+
+                <button type="button" class="btn btn-checked btn-primary my-3" data-bs-toggle="modal"
+
+
+                    data-bs-target="#copytxt">Copy</button>
+
+
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="translate:"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <hr class="my-3">
+
+    <div class="p-3 bg-primary text-white text-center rounded-bottom">
+        <h3>Translate From Arabic To French</h3>
+    </div>
+
+    <div class="container-fluid mb-4 bg-info p-4 rounded-bottom">
+        <span class="h2 grdnt">Write and Translate</span>
+        <span><a class="h4 text-light" href="" style="text-decoration: none;">Press Here</a></span>
+        <form>
+            <div class="mb-3 mt-3">
+                <!-- <div class="copied" style="display: block;">copied</div> -->
+                <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                    data-bs-target="#copytxt">Copy</button>
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="translate:"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <hr class="my-3">
+
+    <div class="p-3 bg-primary text-white text-center rounded-bottom">
+        <h3>Translate From Arabic To German</h3>
+    </div>
+
+    <div class="container-fluid mb-4 bg-info p-4 rounded-bottom">
+        <span class="h2 grdnt">Write and Translate</span>
+        <span><a class="h4 text-light" href="" style="text-decoration: none;">Press Here</a></span>
+        <form>
+            <div class="mb-3 mt-3">
+                <!-- <div class="copied" style="display: none;">copied</div> -->
+                <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal"
+                    data-bs-target="#copytxt">Copy</button>
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="translate:"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="imgwindw"></div>
+
+    <div class="ftr text-center rounded-top-3 bg-info p-3">
+        <h1>Popular Destination In Egypt</h1>
+    </div>
+
+    <div class="row justify-content-around m-0">
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="poscard-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-around m-0">
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-around m-0">
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divfct card p-2 m-3" style="width: 22rem">
+            <img src="/statics/images/pic (9).jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="cb-l w-50">
+                    <h5 class="card-title">Cairo</h5>
+                    <p class="card-text">Capital Of Egypt</p>
+                </div>
+                <div class="cb-r text-end">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- -------------------------------------------- -->
+
+    <div class="imgwindw"></div>
+
+    <!-- -------------------------------------------- -->
+
+    <div class="ftr text-center rounded-top-3 p-4 bg-info mb-3">
+        <h1>Thanks For</h1>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="row justify-content-center m-0">
+        <div class="scldiv card p-2 m-4 rounded-5" style="width: 23rem; height: 30rem;">
+            <img src="/statics/images/pic (9).jpg" style="height: 100%;" class="card-img-top rounded-5" alt="...">
+            <div class="card-body" style="width: 95%;">
+                <div class="cb-l ms-4 text-light" style="line-height: 5px; position: absolute; top: 30px;">
+                    <h5 class="card-title">All Thx And Appreciation</h5>
+                    <p class="card-text"><small>October 15,2020</small></p>
+                </div>
+            </div>
+            <div style="position: absolute; bottom: 50px; left: 30px;">
+                <div class="cb-r">
+                    <img src="/statics/images/pic (5).jpg" id=""
+                        style="width: 100px; height: 130px; border-radius: 50%; outline: 1px solid grey;" alt="">
+                </div>
+                <div class="text-light mt-3" style="line-height: 5px;">
+                    <p><strong>Eng. Mohamad Isma3il</strong></p>
+                    <span>Director Of Ui/Ux</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scldiv card p-2 m-4 rounded-5" style="width: 23rem; height: 30rem;">
+            <img src="/statics/images/pic (9).jpg" style="height: 100%;" class="card-img-top rounded-5" alt="...">
+            <div class="card-body" style="width: 95%;">
+                <div class="cb-l ms-4 text-light" style="line-height: 5px; position: absolute; top: 30px;">
+                    <h5 class="card-title">All Thx And Appreciation</h5>
+                    <p class="card-text"><small>October 15,2020</small></p>
+                </div>
+            </div>
+            <div style="position: absolute; bottom: 50px; left: 30px;">
+                <div class="cb-r">
+                    <img src="/statics/images/pic (5).jpg" id=""
+                        style="width: 100px; height: 130px; border-radius: 50%; outline: 1px solid grey;" alt="">
+                </div>
+                <div class="text-light mt-3" style="line-height: 5px;">
+                    <p><strong>Eng. Mohamad Isma3il</strong></p>
+                    <span>Director Of Ui/Ux</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scldiv card p-2 m-4 rounded-5" style="width: 23rem; height: 30rem;">
+            <img src="/statics/images/pic (9).jpg" style="height: 100%;" class="card-img-top rounded-5" alt="...">
+            <div class="card-body" style="width: 95%;">
+                <div class="cb-l ms-4 text-light" style="line-height: 5px; position: absolute; top: 30px;">
+                    <h5 class="card-title">All Thx And Appreciation</h5>
+                    <p class="card-text"><small>October 15,2020</small></p>
+                </div>
+            </div>
+            <div style="position: absolute; bottom: 50px; left: 30px;">
+                <div class="cb-r">
+                    <img src="/statics/images/pic (5).jpg" id=""
+                        style="width: 100px; height: 130px; border-radius: 50%; outline: 1px solid grey;" alt="">
+                </div>
+                <div class="text-light mt-3" style="line-height: 5px;">
+                    <p><strong>Eng. Mohamad Isma3il</strong></p>
+                    <span>Director Of Ui/Ux</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- -------------------------------------------- -->
+
+    <hr>
+
+    <h1 class="m-3 text-center m-5 grdnt" style="font-size: 50px;">Egypt News</h1>
+
+
+
+    <!-- ///////////////////////////////////////////////////////// -->
+
+    <div class="container mt-4 bg-primary text-white rounded-4 position-relative">
+        <div class="column">
+            <div class="p-5 w-75" style="width: 65%;">
+                <div class="txt w-75">
+                    <h1>Podcast Title</h1>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Mon, May 25th 2020
+                    <div class="underlinediv"></div>
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis quia cum, libero sed tempora
+                        beatae
+                        pariatur ipsum nam quibusdam nemo atque consequuntur distinctio aliquid dicta architecto
+                        consectetur
+                        necessitatibus laudantium.
+                    </p>
+                </div>
+                <div class="column mt-5">
+                    <button class="btn btn-secondary text-dark">Podcast</button>
+                    <button class="btn btn-secondary text-dark">55 mins.</button>
+                    <button class="btn btn-secondary">Play Episode</button>
+                </div>
+            </div>
+            <div class="w-25">
+                <img src="/statics/images/pic (6).jpg" alt=""
+                    class="imgdiv1 position-absolute top-0 end-0 h-100 rounded-end-4" style="width: 35%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+    <div class="container mt-4 bg-primary text-white rounded-4 position-relative">
+        <div class="column">
+            <div class="p-5 w-75" style="width: 65%; margin-left: 35%;">
+                <div class="txt w-75">
+                    <h1>Podcast Title</h1>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Mon, May 25th 2020
+                    <div class="underlinediv"></div>
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis quia cum, libero sed tempora
+                        beatae
+                        pariatur ipsum nam quibusdam nemo atque consequuntur distinctio aliquid dicta architecto
+                        consectetur
+                        necessitatibus laudantium.
+                    </p>
+                </div>
+                <div class="column mt-5">
+                    <button class="btn btn-secondary text-dark">Podcast</button>
+                    <button class="btn btn-secondary text-dark">55 mins.</button>
+                    <button class="btn btn-secondary">Play Episode</button>
+                </div>
+            </div>
+            <div class="w-25">
+                <img src="/statics/images/pic (5).jpg" alt=""
+                    class="imgdiv2 position-absolute top-0 start-0 h-100 rounded-start-4" style="width: 35%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <div class="container mt-4 bg-primary text-white rounded-4 position-relative">
+        <div class="column">
+            <div class="p-5 w-75" style="width: 65%;">
+                <div class="txt w-75">
+                    <h1>Podcast Title</h1>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Mon, May 25th 2020
+                    <div class="underlinediv"></div>
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis quia cum, libero sed tempora
+                        beatae
+                        pariatur ipsum nam quibusdam nemo atque consequuntur distinctio aliquid dicta architecto
+                        consectetur
+                        necessitatibus laudantium.
+                    </p>
+                </div>
+                <div class="column mt-5">
+                    <button class="btn btn-secondary text-dark">Podcast</button>
+                    <button class="btn btn-secondary text-dark">55 mins.</button>
+                    <button class="btn btn-secondary">Play Episode</button>
+                </div>
+            </div>
+            <div class="w-25">
+                <img src="/statics/images/pic (8).jpg" alt=""
+                    class="imgdiv1 position-absolute top-0 end-0 h-100 rounded-end-4" style="width: 35%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+    <div class="container mt-4 bg-primary text-white rounded-4 position-relative">
+        <div class="column">
+            <div class="p-5 w-75" style="width: 65%; margin-left: 35%;">
+                <div class="txt w-75">
+                    <h1>Podcast Title</h1>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Mon, May 25th 2020
+                    <div class="underlinediv"></div>
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis quia cum, libero sed tempora
+                        beatae
+                        pariatur ipsum nam quibusdam nemo atque consequuntur distinctio aliquid dicta architecto
+                        consectetur
+                        necessitatibus laudantium.
+                    </p>
+                </div>
+                <div class="column mt-5">
+                    <button class="btn btn-secondary text-dark">Podcast</button>
+                    <button class="btn btn-secondary text-dark">55 mins.</button>
+                    <button class="btn btn-secondary">Play Episode</button>
+                </div>
+            </div>
+            <div class="w-25">
+                <img src="/statics/images/pic (7).jpg" alt=""
+                    class="imgdiv2 position-absolute top-0 start-0 h-100 rounded-start-4" style="width: 35%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+
+    <div class="container my-5">
+        <div class="iconsdivftr row justify-content-around">
+
+            <h1 class="text-center my-5 grdnt" style="font-size: 50px;">Join Us</h1>
+
+            <div class="btn btn-light" style="width:23%;">
+                <p class="h3 m-3">Subscribe</p>
+                <img class="ico" src="/statics/images/png/whatsapp_2504957.png" alt="">
+                <p class="h4 m-2">Go To Link</p>
+            </div>
+
+            <div class="btn btn-light" style="width:23%;">
+                <p class="h3 m-3">Follow</p>
+                <img class="ico" src="/statics/images/png/twitter_3955032.png" alt="">
+                <p class="h4 m-2">Go To Link</p>
+            </div>
+
+            <div class="btn btn-light" style="width:23%;">
+                <p class="h3 m-3">Like</p>
+                <img class="ico" src="/statics/images/png/instagram_2111463.png" alt="">
+                <p class="h4 m-2">Go To Link</p>
+            </div>
+
+            <div class="btn btn-light" style="width:23%;">
+                <p class="h3 m-3">Watch</p>
+                <img class="ico" src="/statics/images/png/whatsapp_2504957.png" alt="">
+                <p class="h3 m-2">Go To Link</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+
+
+    <div class="container-fluid bg-info">
+
+
+
+        <div class="footer text-center text-light">
+            <div>
+                <hr>
+                <div class="grp d-flex justify-content-center">
+                    <div class="crcl position-relative">
+                        <img class="logo" src="/statics/icons/GitHubLogo.png" alt="">
+                    </div>
+                    <h4 class="ms-3 mt-3">Good Company</h4>
+                </div>
+                <hr>
+                <p>Tel: 000-000-000</p>
+                <p>Address: Egypt</p>
+                <p>Fax: 000-000-000</p>
+            </div>
+
+            <div>
+                <hr>
+                <div class="grp d-flex justify-content-center">
+                    <div class="crcl position-relative">
+                        <img class="logo" src="/statics/icons/GitHubLogo.png" alt="">
+                    </div>
+                    <h4 class="ms-3 mt-3">Good Company</h4>
+                </div>
+                <hr>
+                <div class="midl-a">
+                    <a href="">
+                        <p>Tel: 000-000-000</p>
+                    </a>
+                    <a href="">
+                        <p>Address: Egypt</p>
+                    </a>
+                    <a href="">
+                        <p>Fax: 000-000-000</p>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <hr>
+                <div class="grp d-flex justify-content-center">
+                    <div class="crcl position-relative">
+                        <img class="logo" src="/statics/icons/GitHubLogo.png" alt="">
+                    </div>
+                    <h4 class="ms-3 mt-3">Good Company</h4>
+                </div>
+                <hr>
+                <p>Tel: 000-000-000</p>
+                <p>Address: Egypt</p>
+                <p>Fax: 000-000-000</p>
+            </div>
+        </div>
+
+        <div class="ftr bg-info text-center">
+            <hr>
+            <h4 class="grdnt">COPYRIGHT &COPY; 2020 SHIMAASHUSSEIN EL SAID, GOOD COMPANY ALL RIGHTS</h4>
+            <hr>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="copytxt">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+
+                <!-- Modal Header -->
+                <!-- <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> -->
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    تم نسخ النص
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------- -->
+
+    <!-- JavaScript Source File -->
+    <script src="/js/script.js"></script>
+
+    <!-- -------------------------------------------- -->
+</body>
+</html>

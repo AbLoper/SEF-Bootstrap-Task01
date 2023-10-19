@@ -1,0 +1,11 @@
+::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    /* background-color: rgb(233, 230, 40); */
+    position: absolute;
+    border-width: 100px;
+    border-style: solid;
+    /* border-color: red blue green black; */
+    border-color: transparent blue transparent transparent;
+}

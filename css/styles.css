@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.collapse{
+    font-size: large;
+}
+
+.imgdiv1 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+.imgdiv2 {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.imgwindw{
+    width: 100%;
+    height: 350px;
+    background-image: url(/statics/images/imgwindw1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.ico {
+    width: 100px;
+    height: 100px;
+}
+
+.logohead {
+    width: 42px;
+    height: 42px;
+    margin: 3.5px 3.5px;
+}
+
+.iconsdiv {
+    position: fixed;
+    top: 26%;
+    right: 2.5%;
+    z-index: 3;
+    color: blue;
+    font-size: 75px;
+    line-height: 80px;
+    list-style-type: none;
+}
+
+.logo{
+    width: 64px;
+    height: 64px;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.copied{
+    width: 100px;
+    background-color: crimson;
+    border-radius:  0 50px 50px;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    position: absolute;
+    margin-left: 3.7%;
+    margin-top: 3%;
+}
+
+/* .btn-checked:checked .copied{
+    display: block;
+} */
+
+.crcl{
+    width: 75px;
+    height: 75px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 25px white;
+}
+
+.divfct {
+    position: relative;
+}
+
+.crsl {
+    width: 100%;
+    height: 100vh;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+.ftr hr{
+    color: aliceblue;
+    
+}
+
+.midl-a a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .iconsdiv {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .iconsdivftr p{
+        font-size: medium;
+        /* background-color: brown; */
+    }
+}
+
+/* @media (max-width: 567px) {
+    .ftr {
+        height: 250px;
+    }
+} */
